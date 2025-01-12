@@ -58,10 +58,8 @@ int maxSubArray(int arr[] , int start , int end){
 int main()
 {
     int n;
-    cout << "Enter the number of elements in the array: ";
     cin >> n;
     int arr[n];
-    cout << "Enter the elements of the array: ";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -69,6 +67,5 @@ int main()
     // int res = max_sum_subarray_brutforce_TC_On3(arr, n);
     // int res = max_sum_subarray_brutforce_TC_On2(arr, n);
     int res = maxSubArray(arr, 0, n - 1);
-    cout << "The maximum sum of the subarray is: " << res;
-    return 0;
+    return res;
 }
