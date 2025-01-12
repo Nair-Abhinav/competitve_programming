@@ -16,9 +16,16 @@ int majority_element(int arr[] , int n){
             freq--;
         }
     }
-    if(ans > floor(n/2)){
+    int count =0;
+    for(int val:arr){
+        if(val == ans){
+            count++;
+        }
+    }
+    if(count > floor(n/2)){
         return ans;
-    }else{
+    }
+    else{
         return -1;
     }
 }
